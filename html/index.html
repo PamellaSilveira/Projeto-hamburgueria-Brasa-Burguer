@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasa Burguer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/logohamburguer.png">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#" id="brandLogo">
+                    <img src="../img/logohamburguer.png" alt="Logo" width="60" height="60">
+                    <span class="brand-text">Brasa Burger</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" id="abrePedidos" href="#pedidos">Pedidos</a>
+                        <a class="nav-link" href="#footer-contatos">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container Principal -->
+        <div class="container-principal text-center">
+            <img src="../img/delicioso-hamburguer-com-ingredientes-frescos.jpg" alt="Hambúrguer" class="logo mb-3">
+            <h1 class="titulo-principal">Brasa Burguer</h1>
+        </div>
+
+        <!-- Menu -->
+        <div class="container container-secundario mt-5">
+            <h2 class="text-center mb-4" id="menu">Conheça nosso Menu</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto3.jpg" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer Clássico</h5>
+                                <p class="card-text">Delicioso hambúrguer com carne suculenta, queijo derretido e pão
+                                    fresco.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$39,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer Clássico"
+                                    data-preco="39.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto2.jpg" class="card-img-top" alt="Hambúrguer Bacon">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer Bacon</h5>
+                                <p class="card-text">Com bacon crocante, queijo cheddar e molho especial da casa.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$42,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer Bacon"
+                                    data-preco="42.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto7.jpg" class="card-img-top" alt="Hambúrguer Veggie">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer Veggie</h5>
+                                <p class="card-text">Opção vegetariana com burger de grão-de-bico e legumes frescos.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$39,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer Veggie"
+                                    data-preco="39.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto4.jpg" class="card-img-top" alt="Hambúrguer Duplo">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer Duplo</h5>
+                                <p class="card-text">Dois hambúrgueres suculentos, queijo cheddar e cebola caramelizada.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$49,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer Duplo"
+                                    data-preco="49.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto8.jpg" class="card-img-top" alt="Hambúrguer de Frango">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer de Frango</h5>
+                                <p class="card-text">Hambúrguer de frango grelhado, alface, tomate e molho especial.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$37,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer de Frango"
+                                    data-preco="37.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/produto5.jpg" class="card-img-top" alt="Hambúrguer Especial">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Hambúrguer Especial</h5>
+                                <p class="card-text">Hambúrguer gourmet com queijo brie, rúcula e maionese trufada.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$55,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Hambúrguer Especial"
+                                    data-preco="55.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Petiscos -->
+        <div class="container container-secundario mt-5">
+            <h2 class="text-center mb-4">Nossos Petiscos</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/BATATA.jpg" class="card-img-top" alt="Batata Rústica">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Batata Rústica</h5>
+                                <p class="card-text">Crocante por fora, macia por dentro e temperada com ervas
+                                    especiais.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$19,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Batata Rústica"
+                                    data-preco="19.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/bolinhadequeijo.jpg" class="card-img-top" alt="Bolinho de Queijo">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Bolinho de Queijo</h5>
+                                <p class="card-text">Porção de bolinhos recheados com queijo derretido e muito sabor.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$24,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Bolinho de Queijo"
+                                    data-preco="24.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/Bolinho de Batata.jpg" class="card-img-top" alt="Bolinho de Batata">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Bolinho de Batata</h5>
+                                <p class="card-text">Clássico e irresistível, crocante por fora e macio por dentro.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$22,90</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Bolinho de Batata"
+                                    data-preco="22.90">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bebidas -->
+        <div class="container container-secundario mt-5">
+            <h2 class="text-center mb-4">Bebidas</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/cocacola (2).jpg" class="card-img-top" alt="Refrigerante Lata">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Refrigerante Lata</h5>
+                                <p class="card-text">Clássico geladinho para acompanhar seu lanche.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$6,00</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Refrigerante Lata"
+                                    data-preco="6.00">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/cocacola (2).jpg" class="card-img-top" alt="Refrigerante 600ml">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Refrigerante 600ml</h5>
+                                <p class="card-text">Na medida certa para compartilhar ou matar a sede.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$8,00</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Refrigerante 600ml"
+                                    data-preco="8.00">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="../img/suco.jpg" class="card-img-top" alt="Suco Natural">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Suco Natural</h5>
+                                <p class="card-text">Refrescante e saudável, feito com frutas selecionadas.</p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="preco mb-2">R$10,00</p>
+                                <button class="btn btn-primary w-100 btn-comprar" data-nome="Suco Natural"
+                                    data-preco="10.00">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrinho lateral -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoPedidos" id="pedidos">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">🛒 Meus Pedidos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul id="listaPedidos" class="list-group mb-3">
+                    <!-- Itens vão aparecer aqui -->
+                </ul>
+                <div>
+                    <span class="fw-bold">Endereço de entrega</span>
+                    <span id="enderecoInformado"></span>
+                    <button class="btn btn-success w-100 mt-3" id="botaoEndereco" data-bs-toggle="modal"
+                        data-bs-target="#modalEndereco">Informar endereço</button>
+
+                </div>
+                <div class="d-flex justify-content-between fw-bold">
+                    <span class="fw-bold">Frete:</span>
+                    <span id="precoFrete">A definir</span>
+                </div>
+                <div class="d-flex justify-content-between fw-bold">
+                    <span class="fw-bold">Total:</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+                <button class="btn btn-success w-100 mt-3" id="finalizarPedido" disabled
+                    onclick="finalizarPedido()">Finalizar
+                    Pedido</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalEndereco" tabindex="-1" aria-labelledby="modalEnderecoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Cabeçalho -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEnderecoLabel">Dados para Entrega</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <form id="formEndereco">
+                        <!-- Corpo -->
+                        <div class="modal-body">
+
+
+                            <!-- Telefone -->
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone"
+                                    placeholder="(99) 99999-9999" required>
+                            </div>
+
+                            <!-- CEP -->
+                            <div class="mb-3">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000"
+                                    required>
+                            </div>
+                            <!-- Cidade -->
+                            <div class="mb-3">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" name="cidade" disabled required>
+                            </div>
+
+
+                            <!-- Bairro -->
+                            <div class="mb-3">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input type="text" class="form-control" id="bairro" name="bairro" disabled required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="rua" class="form-label">Rua</label>
+                                <input type="text" class="form-control" id="rua" name="rua" disabled required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Número</label>
+                                <input type="text" class="form-control" id="numero" name="numero" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="complemento" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="complemento" name="complemento">
+                            </div>
+
+
+                        </div>
+
+                        <!-- Rodapé -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" id="confirmarEntrega" class="btn btn-success">Confirmar
+                                Entrega</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer-contatos">
+        <div class="footer-container">
+
+        <!-- Logo e Slogan -->
+        <div class="footer-logo">
+            <img src="../img/logohamburguer.png" alt="Logo Brasa Burguer">
+            <h2>Brasa Burguer</h2>
+            <p>O sabor que conquista todos os dias!</p>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5591991985614" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <!-- Contatos com ícones -->
+        <div class="footer-contact">
+            <h3>Contatos</h3>
+            <p><i class="bi bi-geo-alt-fill"></i> R. Padre Chagas, Moinhos de Vento, Porto Alegre - RS</p>
+            <p><i class="bi bi-telephone-fill"></i> (51) 99198-5614</p>
+            <p><i class="bi bi-envelope-fill"></i> contato@brasaburguer.com</p>
+        </div>
+
+        <!-- Mapa -->
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27637.33887067168!2d-51.225875552020256!3d-30.017706439426405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979b6fd8f0a65%3A0x9292d7a8ed063224!2sR.%20Padre%20Chagas%20-%20Moinhos%20de%20Vento%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1756761718885!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+</footer>
+
+    </main>
+
+
+
+</body>
+
+</html>

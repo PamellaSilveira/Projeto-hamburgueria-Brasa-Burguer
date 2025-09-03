@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primaria: #57564f;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --colorBotaoHover: #7965C1; 
+}
+
+
+body {
+    background-color: var(--escuro)
+}
+
+/* Navbar */
+.navbar-brand,
+.navbar-nav a {
+    color: var(--claro) !important;
+    font-weight: 700;
+    font-size: 20px;
+
+
+}
+
+.navbar-nav a:hover {
+    background-color: var(--secundaria);
+    border-radius: 5px;
+}
+
+.brand-text {
+    opacity: 0;
+    margin-left: 8px;
+    transition: opacity 0.4s ease;
+}
+
+.brand-text.show {
+    opacity: 1;
+}
+
+/* Container Principal */
+.container-principal {
+    background-image: url(../img/restaurante-de-cafe-cafeteria-borrao-com-fundo-bokeh.jpg);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--claro);
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.logo {
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+    border: 6px solid var(--vidro);
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+    animation: flutuar 3s ease-in-out infinite;
+    object-fit: cover;
+}
+
+.titulo-principal {
+    font-size: 32px;
+    margin-top: 20px;
+    color: var(--claro);
+    font-weight: 700;
+}
+
+/* Animação flutuar */
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Container Secundário */
+.container-secundario h2 {
+    font-size: 28px;
+    color: var(--claro);
+    font-weight: 700;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-comprar {
+    background-color: var(--escuro);
+    border: none;
+    color: #fff;
+    /* garante contraste do texto */
+}
+
+.btn-comprar:hover {
+    background-color: #000;
+    /* ou um tom mais claro/escuro do --escuro */
+}
+
+
+/* Estilizando o offcanvas */
+#carrinhoPedidos {
+    width: 350px;
+    /* largura personalizada */
+    background-color: #DCDCDC;
+    /* cor de fundo suave */
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+    /* sombra na lateral */
+    border-radius: 0 10px 10px 0;
+    /* borda arredondada na direita */
+}
+
+/* Cabeçalho */
+#carrinhoPedidos .offcanvas-header {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    background-color: var(--escuro);
+}
+
+/* Título dentro do cabeçalho */
+
+#carrinhoPedidos .offcanvas-title {
+    font-size: 1.25rem;
+    color: var(--claro);
+    font-weight: 700;
+}
+
+#carrinhoPedidos .fw-bold {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#carrinhoPedidos .btn {
+    background-color: var(--secundaria);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#carrinhoPedidos .btn:hover {
+    background-color: #000;
+}
+
+.footer {
+    background-color: var(--maisEscuro, #0a0f1c);
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    /* Espaço acima do footer */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo e Slogan */
+.footer-logo {
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footer-logo p {
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* Redes sociais */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 150px;
+}
+
+.footer-social a i {
+    font-size: 24px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.footer-social a:hover i {
+    transform: scale(1.2);
+    color: var(--secundaria);
+}
+
+/* Contatos */
+.footer-contact {
+    flex: 1 1 250px;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-contact i {
+    color: var(--secundaria);
+}
+
+/* Mapa */
+.footer-map {
+    flex: 1 1 300px;
+    min-height: 150px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-social,
+    .footer-map,
+    .footer-contact {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-map {
+        min-height: 200px;
+    }
+}
+.modal-header{
+    background-color: var(--maisEscuro);
+    color:var(--claro);
+    font-weight:800;
+}
+/* Botão Fechar */
+.modal-footer .btn-secondary {
+    background-color: var(--secundaria);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #000; /* tom mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* leve elevação no hover */
+}
+
+.modal-footer .btn-success {
+    background-color:var(--secundaria);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    margin-left: 10px; /* espaço entre os botões */
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* sombra suave */
+}
+
+.modal-footer .btn-success:hover {
+    background-color: #000; /* verde mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* leve elevação */
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3); /* sombra mais forte */
+}
